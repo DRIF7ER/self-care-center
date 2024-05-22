@@ -6,3 +6,129 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
+
+/*~~~~~~~~~~~~~~~~~~~~ MAIN CONTAINERS ~~~~~~~~~~~~~~~~~~~~*/
+
+body {
+    background: linear-gradient(#134d71, #78a7c6, #f7e4bf);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~ BODY CONTAINERS ~~~~~~~~~~~~~~~~~~~~*/
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~ MESSAGE BOX CONTAINER ~~~~~~~~~~~~~~~~~~~~*/
+
+.message-selection-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.message-system-container {
+    background-color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 15vh;
+    width: 60vw;
+    border-radius: 5px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.selection-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 30%;
+    width: 100%;
+    margin-top: 2.5%;
+}
+
+.affirmation-container {
+    margin-right: 10vw;
+}
+
+#affirmation-button {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 1vw;
+    margin-bottom: 0;
+    height: 2vh;
+    width: 2vw;
+}
+
+#mantra-button {
+    margin-left: 5vw;
+    margin-top: 0;
+    margin-right: 1vw;
+    margin-bottom: 0;
+    height: 2vh;
+    width: 2vw;
+}
+
+.message-box {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 20vh;
+    width: 90vw;
+    border-radius: 5px;
+    margin-bottom: 20vh;
+}
+
+.message-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 25%;
+    width: 100%
+}
+
+.fetch-message {
+    background-color: #134d71;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    color: #ffffff;
+    height: 100%;
+    width: 40%;
+    border-radius: 5px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~ MESSAGE DELIVERY CONTAINERS ~~~~~~~~~~~~~~~~~~~~*/
+
+#meditative-person {
+    height: 45%;
+    width: 45%;
+}

@@ -4,8 +4,33 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
   </head>
+  <header>
+    <h1><span id="sparkles-1">✨</span> Self Care Center <span id="sparkles-2">✨</span></h1>
+  </header>
   <body>
-  
+    <section class="message-section-container">
+      <h3 class="message-type">
+        Which type of message?
+      </h3>
+      <article class="message-system-container">
+        <div class="selection-container">
+          <div class="affirmation-container">
+            <input class="affirmation" type="radio" id="affirmation-button">
+              <label for="affirmation-button">Affirmation</label>
+          </div>
+          <div class="mantra-container">
+            <input class="mantra" type="radio" id="mantra-button">
+              <label for="mantra-button">Mantra</label>
+          </div>
+        </div>
+        <div class="message-button-container">
+          <button class="fetch-message">Recieve Message</button>
+        </div>
+      </article>
+    </section>
+    <article class="message-box">
+      <img id="meditative-person" src="./assets/meditate.svg">
+    </article>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
