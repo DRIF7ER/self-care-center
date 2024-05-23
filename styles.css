@@ -100,6 +100,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    padding: .5em;
     height: 20vh;
     width: 90vw;
     border-radius: 5px;
@@ -131,4 +132,34 @@ h3 {
 #meditative-person {
     height: 45%;
     width: 45%;
+}
+
+.hidden {
+    display: none;
+}
+
+.message-box-display::after {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-weight: lighter;
+    font-size: 120%;
+}
+
+.actual-message {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 80%;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-weight: lighter;
+    font-size: 120%;
 }
