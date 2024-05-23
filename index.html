@@ -15,11 +15,11 @@
       <article class="message-system-container">
         <div class="selection-container">
           <div class="affirmation-container">
-            <input class="affirmation" type="radio" id="affirmation-button">
+            <input class="affirmation" type="radio" name="radio-button" id="affirmation-button">
               <label for="affirmation-button">Affirmation</label>
           </div>
           <div class="mantra-container">
-            <input class="mantra" type="radio" id="mantra-button">
+            <input class="mantra" type="radio" name="radio-button" id="mantra-button">
               <label for="mantra-button">Mantra</label>
           </div>
         </div>
@@ -30,6 +30,9 @@
     </section>
     <article class="message-box">
       <img id="meditative-person" src="./assets/meditate.svg">
+      <div class="message-box-display hidden">
+        <h2 class="actual-message"></h2>
+      </div>
     </article>
     <script type="text/javascript" src="main.js"></script>
   </body>
