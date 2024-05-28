@@ -1,39 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-  </head>
-  <header>
-    <h1><span id="sparkles-1">✨</span> Self Care Center <span id="sparkles-2">✨</span></h1>
-  </header>
-  <body>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section class="page-wrapper">
+    <header>
+      <h1><span id="sparkles-1">✨</span> Self Care Center <span id="sparkles-2">✨</span></h1>
+    </header>
     <section class="message-section-container">
+
       <h3 class="message-type">
         Which type of message?
       </h3>
       <article class="message-system-container">
+
         <div class="selection-container">
           <div class="affirmation-container">
             <input class="affirmation" type="radio" name="radio-button" id="affirmation-button">
-              <label for="affirmation-button">Affirmation</label>
+            <label for="affirmation-button">Affirmation</label>
           </div>
           <div class="mantra-container">
             <input class="mantra" type="radio" name="radio-button" id="mantra-button">
-              <label for="mantra-button">Mantra</label>
+            <label for="mantra-button">Mantra</label>
           </div>
         </div>
         <div class="message-button-container">
-          <button class="fetch-message">Recieve Message</button>
+          <button class="fetch-message hover" id="fetch-button">Recieve Message</button>
         </div>
+
       </article>
+      <article class="message-box">
+
+        <div class="meditative-person">
+          <img id="meditative-person"
+            src='./assets/meditate.svg'>
+        </div>
+        <div class="message-box-display-outer hidden">
+          <div class="message-box-display-inner">
+            <h2 class="actual-message" id="actual-message"></h2>
+          </div>
+        </div>
+
+      </article>
+
     </section>
-    <article class="message-box">
-      <img id="meditative-person" src="./assets/meditate.svg">
-      <div class="message-box-display hidden">
-        <h2 class="actual-message"></h2>
-      </div>
+    <div class="clear-button-wrapper hidden">
+      <button class="a-new-beginning hover" id='clear-message'>A New Beginning</button>
+    </div>
+    <div class="user-input-button-wrapper">
+      <button class="user-input-button hover" id="input-page-button">Give Good Vibes</button>
+    </div>
+  </section>
+
+  <section class="outer-form-wrapper hidden">
+    <article class="inner-form-wrapper">
+      <form>
+        <section class="user-input-fields">
+          <div class="form-page-title-wrap">
+            <h1 class="form-page-title">What Is Your Vibe?</h1>
+          </div>
+
+          <input class="affirmation-input user-inputs" type="text" placeholder="Your Affirmation"
+            id="affirmation-input-id" onfocus="affirmationIsFocused()" onfocusout="affirmationIsNotFocused()"
+            required="true">
+          <label for="affirmation-input-id"></label>
+          <input class="mantra-input user-inputs hover1" type="text" placeholder="Your Mantra" id="mantra-input-id"
+            onfocus="mantraIsFocused()" onfocusout="mantraIsNotFocused()" required="true">
+          <label for="mantra-input-id"></label>
+          <button class="submit-button form-buttons hover" id="user-input-button">Send Good Vibes</button>
+          <button class="back-button form-buttons hover" id="back-to-main">Recieve Good Vibes</button>
+
+        </section>
+      </form>
     </article>
-    <script type="text/javascript" src="main.js"></script>
-  </body>
+  </section>
+
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
 </html>
